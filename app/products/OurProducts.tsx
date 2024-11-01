@@ -9,6 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { A11y, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper as SwiperClass } from 'swiper/types'; // To'g'ri Swiper turini import qilish
 import { useAppDispatch, useAppSelector } from '../../hooks/hook';
 import Countdown from '@/components/CountDawn';
 import { toggleLike } from '@/features/like/likeSlice';
@@ -16,34 +17,34 @@ import SkeletonLoader from './SKLoading';
 import { ProductsProps } from '@/types/product.types';
 
 const OurProducts: React.FC<ProductsProps> = ({ products, time, title, name }) => {
-  const [swiper, setSwiper] = useState<any>(null);
+  const [swiper, setSwiper] = useState<SwiperClass | null>(null); // Swiper turi aniqlandi
   const dispatch = useAppDispatch();
   const likedProducts = useAppSelector(state => state.like.data);
   const [isHydrated, setIsHydrated] = useState(false);
-  const [isLoading, setIsLoading] = useState(true); // Add loading state
+  const [isLoading, setIsLoading] = useState(true); 
   useEffect(() => {
     setIsHydrated(true);
-    setTimeout(() => setIsLoading(false), 2000); // Simulate loading state
+    setTimeout(() => setIsLoading(false), 2000); 
   }, []);
 
-  const NextB = (e: any) => {
+  const NextB = (e: React.MouseEvent<HTMLButtonElement>) => { // To'g'ri tur belgilandi
     e.preventDefault();
     if (swiper) {
       swiper.slideNext();
     }
   };
 
-  const PrevB = (e: any) => {
+  const PrevB = (e: React.MouseEvent<HTMLButtonElement>) => { // To'g'ri tur belgilandi
     e.preventDefault();
     if (swiper) {
       swiper.slidePrev();
     }
   };
 
-  // Render the SkeletonLoader if data is still loading
   if (isLoading) {
     return <SkeletonLoader />;
   }
+
   return (
     <section className="wrapper my-[120px]">
       <div>

@@ -8,7 +8,6 @@ import iconSearch from "/public/search.svg";
 import iconLike from "/public/like.svg";
 import iconTrush from "/public/trush.svg";
 import iconMenu from "/public/bx-menu.svg";
-import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {

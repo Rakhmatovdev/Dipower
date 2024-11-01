@@ -38,7 +38,7 @@ const NewArrival = () => {
               <div className="absolute bg-black text-white bottom-0 p-[10px] flex flex-col gap-y-2 sm:w-[255px]">
                 <p className="font-semibold text-2xl">Energy Chic</p>
                 <p className="max-w-[240px] text-sm">
-                  Discover our curated collection of women's fashion pieces that
+                  Discover our curated collection of women&apos;s fashion pieces that
                   will elevate your style.!
                 </p>
                 <Link href="#" className="underline mb-1 font-semibold">
@@ -52,7 +52,7 @@ const NewArrival = () => {
                 <div className="absolute bg-black text-white bottom-0 pb-[10px] pl-[10px] flex flex-col gap-y-1 sm:w-[191px]">
                   <p className="font-semibold text-2xl">Energy Sound</p>
                   <p className="max-w-[175px] text-sm">
-                    Explore the latest Amazon wireless speakers for an immersive
+                    Explore the latest Amazon wireless speakers for an immersive 
                     sound.
                   </p>
                   <Link href="#" className="underline  font-semibold">

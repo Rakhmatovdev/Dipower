@@ -1,5 +1,4 @@
 'use client';
-import React, { useEffect } from 'react';
 import iconHeart from '/public/Fill Heart.svg';
 import iconEye from '/public/Fill Eye.svg';
 import Link from 'next/link';
