@@ -5,9 +5,9 @@ import { useState } from "react"
 import Rater from '@/app/products/Rate';
 import OurProducts from "../OurProducts";
 import MyBredCrumb from './BredCrumb';
-import IconLike from "/public/like.svg"
-import IconDelivery from "/public/icon-delivery.svg"
-import IconReturn from "/public/icon-return.svg"
+import IconLike from "@/public/like.svg"
+import IconDelivery from "@/public/icon-delivery.svg"
+import IconReturn from "@/public/icon-return.svg"
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 import { useProduct } from "@/hooks/useProducts";
 
