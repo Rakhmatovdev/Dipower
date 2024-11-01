@@ -1,5 +1,5 @@
 import { Texts } from "@/data/data";
-import hero from "@/public/about-hero.png"
+import hero from "../../public/about-hero.png"
 const OurStory = () => {
   return (
     <section >

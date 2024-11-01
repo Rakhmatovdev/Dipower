@@ -1,7 +1,7 @@
 "use client";
 import { Time } from "@/types/product.types";
 import { useEffect, useState } from "react";
-import iconTwoDot from "/public/twoD.svg";
+import iconTwoDot from "../public/twoD.svg";
 
 const Countdown: React.FC = () => {
   const initialTime: Time = {
